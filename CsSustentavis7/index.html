@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CS Sustentaveis </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->,
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Fale conosco </a>
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+55 71 8538-3521</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>cs.sustentaveis.projeto@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <!--55 e 56 estva comentado-->
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i>CS Sustentaveis</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="./About.html"target="_blank" class="dropdown-item"><i class="fas fa-user-alt me-2"></i>Sobe Nós</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScvSQqJGfnHJs1TMAPV4zqnAbld_rw3bTVQBvnVrTC2OLLiwQ/viewform"target="_blank"  class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Orçamento</a>
+                                <a href=""target="_blank" class="dropdown-item"><i class="fas fa-bell me-2"></i>Briefing - Construção</a>
+                                <a href=""target="_blank" class="dropdown-item"><i class="fas fa-cog me-2"></i> Serviços</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Sair</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScvSQqJGfnHJs1TMAPV4zqnAbld_rw3bTVQBvnVrTC2OLLiwQ/viewform"target="_blank" class="navbar-brand p-0">
+                    <h1 class="text-primary"><img src="./img/LogoCScontruções2.0.jpg" alt="Logo" class="logo-border"style="border-radius: 50%; width: 70px; height: 70px;">  CS Sustentaveis</h1>
+                  <!--<img src="./img/LogoCScontruções2.0.jpg" alt="Logo">-->
+                  <!--<img src="./img/LogoCScontruções2.0.jpg" alt="Logo" style="border-radius: 50%; width: 70px; height: 70px;">-->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="./About.html"target="_blank" class="nav-item nav-link active">Sobre Nós</a>
+                        <a href=""target="_blank" class="nav-item nav-link">Briefing - Construção</a>
+                        <a href=""target="_blank" class="nav-item nav-link">Solicite um Orcçamento</a>
+                          <!-- <a href="blog.html" class="nav-item nav-link">Quem são nossos clientes </a>-->
+                        <div class="nav-item dropdown">
+                            <a href="https://linktr.ee/cs.sustentaveis" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Redes sociais</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <!--<a href="feature.html" class="dropdown-item">Linkdin</a>-->
+                                <a href="https://www.instagram.com/cs.sustentaveis/?hl=pt"target="_blank" class="dropdown-item">Instagram</a>
+                                <a href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0" target="_blank" class="dropdown-item">Whatsapp</a>
+                                 <!-- <a href="offer.html" class="dropdown-item">E-mail</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>-->
+                                
+                            </div>
+                        </div>
+                        <!--<a href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank" class="nav-item nav-link">Fale conosco</a>-->
+                    </div>
+                    <!--<a href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Whatsapp</a>-->
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item">
+                    <img src="./img/CsconstruçõesLayalt123.png" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-0 gx-5">
+                                <div class="col-lg-0 col-xl-5"></div>
+                                <div class="col-xl-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4"></h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4"></h1>
+                                       <p class="mb-5 fs-5">CS CONSTRUÇÕES SUSTENTAVEIS! <br>
+                                        Somos amantes do trabalho experiente e focado na qualidade</p> 
+                                        
+                                        <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank"><i class="fas fa-play-circle me-2"></i>Fale conosco</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://docs.google.com/forms/d/e/1FAIpQLScvSQqJGfnHJs1TMAPV4zqnAbld_rw3bTVQBvnVrTC2OLLiwQ/viewform"target="_blank">Solicite um orçamento</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                            <h2 class="text-white me-2">Siga nas redes sociais:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.instagram.com/cs.sustentaveis/?hl=pt"target="_blank"><i class="fas fa-recycle"></i></a>
+
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/cs.sustentaveis/?hl=pt"target="_blank"><i class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="./img/CsconstruçõesLayalt123.png" class="img-fluid w-100" alt="Image"> 
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row g-5">
+                                <div class="col-12 animated fadeInUp">
+                                    <div class="text-center">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4"></h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4"></h1>
+                                        <p class="mb-5 fs-5">
+                                        </p>
+                                        </p>
+                                        <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank"><i class="fas fa-play-circle me-2"></i>Fale conosco</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="https://docs.google.com/forms/d/e/1FAIpQLScvSQqJGfnHJs1TMAPV4zqnAbld_rw3bTVQBvnVrTC2OLLiwQ/viewform"target="_blank">Solicite um orçamento</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h2 class="text-white me-2">Siga nas redes sociais:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href="https://www.instagram.com/cs.sustentaveis/?hl=pt"target="_blank"><i class="fas fa-recycle"></i></a>
+                                                <!--<a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>-->
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href="https://www.instagram.com/cs.sustentaveis/?hl=pt"target="_blank"><i class="fab fa-instagram"target="_blank"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Abvout Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">Nossa missão</h4>
+                            <h1 class="display-5 mb-4"></h1>
+                            <p class="mb-4">Na CS Sustentaveis , estamos comprometidos em desenvolver projetos arquitetônicos que aliam inovação, preservação ambiental e eficiência energética. Nossa missão é ser pioneiros na construção de um futuro sustentável, criando espaços que reduzem o impacto ambiental e impulsionam transformações positivas. Construímos mais do que estruturas, moldamos um amanhã melhor para as gerações futuras.
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <div class="d-flex">
+                                        <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
+                                        <div class="ms-4">
+                                            <h4>Trablhamos com inteligêcia</h4>
+                                            <p>A inteligência, tanto de dados quanto artificial, pode otimizar o uso de recursos naturais, prever tendências sustentáveis e automatizar processos para reduzir desperdícios. Isso fortalece a eficiência energética e apoia decisões ecológicas mais estratégicas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
+                                        <div class="ms-4">
+                                            <h4>VALORES</h4>
+                                            
+                                            <p>Transparência, ética, geração de resultados, responsabilidade social, econômica e ambiental.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="https://api.whatsapp.com/send/?phone=5571985383521&text&type=phone_number&app_absent=0"target="_blank" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Whatsapp</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Contate-nos</h4>
+                                            <p class="mb-0 fs-5" style="letter-spacing: 1px;">+55 71 8538-3521 </p>
+                                  
+                                            <p>cs.sustentaveis.projeto@gmail.com</p>
+                                            
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded position-relative overflow-hidden">
+                            <img src="./img/CsConstruçõesLayalt3.png" class="img-fluid rounded w-100" alt="">
+                            <img src="./img/CsConstruçõesLayalt_2.png" class="img-fluid rounded w-100" alt="">
+                            
+                            <div class="" style="position: absolute; top: -15px; right: -15px;">
+                          
+                            </div>
+                            <div class="" style="position: absolute; top: -20px; left: 10px; transform: rotate(90deg);">
+                              
+                            </div>
+                            <div class="rounded-bottom">
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid service pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Compromisso</h4>
+                    <h1 class="display-5 mb-4">MISSÃO </h1>
+                    <p class="mb-0">
+                        Na CS Sustentaveis , nosso compromisso é criar soluções arquitetônicas inovadoras que respeitem o meio ambiente, promovam eficiência energética e harmonizem com a natureza. Nossa missão é liderar o caminho para um futuro sustentável, com projetos que minimizem o impacto ecológico e inspirem mudanças positivas. Juntos, construímos mais do que edifícios: criamos um futuro melhor para as próximas geração .
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="./img/IptuverdeCasaDasArvoes.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Entrega do certificado de IPTU verde categoria OURO , Casa das Arvores </a>
+                                <p class="mb-4">Entrega do certificado de IPTU verde categoria OURO da Casa das Árvores.
+                                    O arquiteto emocionado com essa conquista.
+                                </p>
+                      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="./img/CsEscritorioCasaDasArvores.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Primeira Residencia em Salvador a Ter o IPTU Verde </a>
+                                <p class="mb-4">Parte da equipe que ajudou a tornar realidade a primeira residencia em Salvador a ter o IPTU verde.
+                                </p>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="./img/TecioPrimeiraLIga.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Entrega do certificado IPTU verde</a>
+                                <p class="mb-4">Entrega do certificado IPTU verde nível OURO aos moradores.
+                                </p>
+                                
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="tab-content">
+                            <div id="collapseOne" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        
+                                    </div>
+                                    <div class="col-md-5">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="./img/Tecio-Portifolio1.png" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Fornecedora de Facilities, atua desde a construção civil, reformas e manutenção predial, Instalação, manutenção e ficalização de redes elétricas, hidráulicas e lógicas.</h1>
+                                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Portfólio</h4>
+                    <h1 class="display-5 mb-4">Projeto Casa das Árvores , Ângulos </h1>
+                    
+                </div>
+                <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="./img/CsAngulos_CasaDasArvores.png" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Projeto Casa das Árvores , Ângulos</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3"></a>
+                        <p class="mb-4">
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Projeto Arquitetônico : <br>CS Sustentaveis</h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="./img/CsAngulosCas2.png" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Projeto Casa das Árvores , Ângulos</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3"></a>
+                        <p class="mb-4">
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Projeto Arquitetônico : <br>CS Sustentaveis</h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="./img/CsCasaAngulos4.png" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Projeto Casa das Árvores , Ângulos</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3"></a>
+                        <p class="mb-4">
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Projeto Arquitetônico : <br>CS Sustentaveis</h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                        <img src="./img/CsAngulosCasa7.png" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Projeto Casa das Árvores , Ângulos</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3"></a>
+                        <p class="mb-4">
+                        <div class="d-flex align-items-center">
+                            <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Projeto Arquitetônico : <br>CS Sustentaveis
+                                </h5>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+
+        <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+            <div class="tab-content">
+                <div id="collapseOne" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            
+                        </div>
+                        <div class="col-md-5">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseFour" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-md-7">
+                            <img src="./img/Tecio-Portifolio1.png" class="img-fluid w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <h1 class="display-5 mb-4">Fornecedora de Facilities, atua desde a construção civil, reformas e manutenção predial, Instalação, manutenção e ficalização de redes elétricas, hidráulicas e lógicas.</h1>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container-fluid blog pb-5">
+<div class="container pb-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <h4 class="text-primary">Portfólio</h4>
+        <h1 class="display-5 mb-4">Projeto :<br> Alto do Mundaí - Porto Seguro/BA</h1>
+        <p class="mb-0">NOSSO COMPROMISSO
+            Reduzir
+            Reutilizar e
+            Reciclar
+    </div>
+    <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="./img/VistaMundai_Foto1.png" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Condomínio Vista Mundaí</a>
+                </div>
+            </div>
+            <a href="#" class="h4 d-inline-block mb-3"></a>
+            <p class="mb-4">
+            </p>
+            <div class="d-flex align-items-center">
+                <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                <div class="ms-3">
+                    <h5>Obra :<br> Alto do Mundaí - Porto Seguro/BA</h5>
+                    <p class="mb-0"></p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="./img/CsProjetoMundai.jpg" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Condomínio Vista Mundaí</a>
+                </div>
+            </div>
+            <a href="#" class="h4 d-inline-block mb-3"></a>
+            <p class="mb-4">
+            </p>
+            <div class="d-flex align-items-center">
+                <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                <div class="ms-3">
+                    <h5>Obra :<br> Alto do Mundaí - Porto Seguro/BA</h5>
+                    <p class="mb-0"></p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+                <img src="./img/CondominioMunday_Obras2.jpg" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Condomínio Vista Mundaí</a>
+                </div>
+            </div>
+            <a href="#" class="h4 d-inline-block mb-3"></a>
+            <p class="mb-4">
+            </p>
+            <div class="d-flex align-items-center">
+                <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                <div class="ms-3">
+                    <h5>Obra :<br> Alto do Mundaí - Porto Seguro/BA</h5>
+                    <p class="mb-0"></p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-item p-4">
+            <div class="blog-img mb-4">
+            <img src="./img/Projeto3DPenultimo.jpg" class="img-fluid w-100 rounded" alt="">
+                <div class="blog-title">
+                    <a href="#" class="btn">Projeto em 3D :<br>
+                    Condomínio Vista Mundaí</a>
+                </div>
+            </div>
+            <a href="#" class="h4 d-inline-block mb-3"></a>
+            <p class="mb-4">
+            <div class="d-flex align-items-center">
+                <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                <div class="ms-3">
+                    <h5>Projeto em 3D :<br>  Condomínio Vista Mundaí</h5>
+                    <p class="mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+       
+
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Portfólio</h4>
+            <h1 class="display-5 mb-4">Por Que Realizar um Projeto Arquitetônico ?
+            </h1>
+          
+        </div>
+        <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="./img/CsF1.jpg" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="#" class="btn">Por Que Realizar um Projeto Arquitetônico ?</a>
+                    </div>
+                </div>
+                <a href="#" class="h4 d-inline-block mb-3"></a>
+                <p class="mb-4">
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>Porque um projeto arquitetônico assegura que seu espaço seja :<br>Funcional, bonito, seguro, valoriza, otimiza e transforma !
+                            </h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="./img/CsImg3.jpg" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="#" class="btn">Gerenciamnento de Projetos Quais os  benefícios ?</a>
+                    </div>
+                </div>
+                <a href="#" class="h4 d-inline-block mb-3"></a>
+                <p class="mb-4">
+                </p>
+               <div class="d-flex align-items-center">
+                    <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>Benefícios importantes : <br>Maior eficiência operacional , gestão de riscos , adaptação a mudanças ,cumprimento de prazos.</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                    <img src="./img/Csimg7.jpg" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="#" class="btn">Quais os motivos para Contratar um Arquiteto ?</a>
+                    </div>
+                </div>
+                <a href="#" class="h4 d-inline-block mb-3"></a>
+                <p class="mb-4">
+                </p>
+                <div class="d-flex align-items-center">
+                    <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>Segurança estrutural: Garantem que a construção seja segura e estável.<br>
+                            Atenção aos detalhes burocráticos , cuidam da documentação necessária para a obra . 
+
+                        </h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-item p-4">
+                <div class="blog-img mb-4">
+                <img src="./img/CSultimaimg00.jpg" class="img-fluid w-100 rounded" alt="">
+                    <div class="blog-title">
+                        <a href="#" class="btn">Seu Sonho Tem Endereço ? Nós Realizamos !!!</a>
+                    </div>
+                </div>
+                <a href="#" class="h4 d-inline-block mb-3"></a>
+                <p class="mb-4">
+                <div class="d-flex align-items-center">
+                    <img src="./img/CsAdmSL.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                    <div class="ms-3">
+                        <h5>Na CS Sustentaveis acreditamos que cada projeto é uma oportunidade única de criar algo extraordinário. <br>  Juntos, podemos construir o futuro que você sempre imaginou !</h5>
+                        <p class="mb-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+     
+
+        
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+         <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
